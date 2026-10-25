@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Experience from './components/Experience'
 
 const App = () => {
   useEffect(() => {
@@ -27,10 +28,11 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Certificates />
-      <Education />
-      <Projects />
       <Skills />
+      <Experience />
+      <Projects />
+      <Education />
+      <Certificates />
       <Contact />
       <Footer />
     </div>

@@ -8,9 +8,11 @@ const Navbar = () => {
     const navItems = [
     {name: 'HOME', link: '#home'},
     {name: 'ABOUT', link: '#about'},
-    {name: 'CERTIFICATES', link: '#certificates'},
-    {name: 'PROJECTS', link: '#projects'},
     {name: 'SKILLS', link: '#skills'},
+    {name: 'EXPERIENCE', link: '#experience'},
+    {name: 'PROJECTS', link: '#projects'},
+    {name: 'EDUCATION', link: '#education'},
+    {name: 'CERTIFICATES', link: '#certificates'},
     {name: 'CONTACT', link: '#contact'},
 ]
     const handleNavClick = (itemName) => {
@@ -23,7 +25,7 @@ const Navbar = () => {
     from-pink-200 to-rose-300 backdrop-blur-lg rounded-2xl px-4
     lg:px-8 py-2 shadow-lg font-sans'>
         <div className='flex items-center justify-between w-full
-        space-x-6 lg:space-x-8'>
+        space-x-6 lg:space-x-6'>
             {/* Logo */}
         <a href="/" className='flex items-center space-x-2'>
         <span className='text-2xl font-mono font-extrabold text-pink-600'>
@@ -31,13 +33,13 @@ const Navbar = () => {
         </span>
         </a>
         {/* Navigation */} 
-        <div className='hidden lg:flex items-center space-x-6'>
+        <div className='hidden lg:flex items-center space-x-4'>
             {navItems.map((item) => (
                 <a 
                 key={item.name}
                 href={item.link}
                 onClick={() => handleNavClick(item.name)}
-                className='relative font-semibold font-mono tracking-wide'
+                className='relative font-semibold font-mono tracking-wide text-sm'
                 >
                     <span className={`transition-colors duration-300 ${
                         activeSection === item.name.toLowerCase()
@@ -69,7 +71,7 @@ const Navbar = () => {
         </div>
             <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className='p-2 rounded-lg bg-gray-200'>
+            className='lg:hidden p-2 rounded-lg bg-gray-200'>
                 {isMenuOpen ? (
                     <X className='w-5 h-5 text-gray-700'/>
                 ) : (

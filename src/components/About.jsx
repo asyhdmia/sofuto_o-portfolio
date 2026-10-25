@@ -4,12 +4,6 @@ import iconflower from '../assets/iconflower.png'
 import aboutImg from '../assets/aboutImg.png'
 
 const About = () => {
-    const stats = [
-        { number: '3', label: 'Work Experience'},
-        { number: '6+', label: 'Projects'},
-        { number: '2', label: 'Certificates'},
-        { number: '2', label: 'Qualifications'},
-    ]
   return (
     <section id='about' className='min-h-screen flex items-center
     justify-center p-4 sm:p-6 lg:p-12 relative overflow-hidden
@@ -40,23 +34,6 @@ const About = () => {
             font-mono text-sm sm:text-base'>
                 I’m passionate about web development, game design and data. I enjoy turning ideas into interactive digital experiences, and I’m always learning, building and improving.
             </p>
-            <div className='grid grid-cols-2 gap-6 w-full max-w-sm
-            lg:max-w-none'>
-                {stats.map((stat, index) => (
-                    <div data-aos='fade-up' data-aos-delay={index * 100}
-                    key={index}
-                    className='text-center lg:text-left'>
-                        <div className='text-2xl sm:text-3xl lg:text-4xl
-                        font-bold text-pink-400'>
-                            {stat.number}
-                        </div>
-                        <div className='text-xs sm:text-sm text-gray-400
-                        font-mono'>
-                            {stat.label}
-                        </div>
-                    </div>
-                ))}
-            </div>
         </div>
         <div 
         data-aos='zoom-in' 
