@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Calendar, X } from 'lucide-react'
-import ribbon from '../assets/ribbon.png'
+import cherry from '../assets/cherry.png'
 import iconflower from '../assets/iconflower.png'
 
 const Education = () => {
@@ -51,7 +51,7 @@ const Education = () => {
             <img 
             data-aos='fade-right'
             data-aos-duration='1000'
-            src={ribbon} 
+            src={cherry} 
             alt="Education" 
             className='lg:w-110 lg:h-130 w-full rounded-2xl
             object-contain drop-shadow-[0_0_40px_rgba(255,0,128,0.8)]'/>
