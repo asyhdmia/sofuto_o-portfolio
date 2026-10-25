@@ -25,7 +25,7 @@ const Navbar = () => {
     from-pink-200 to-rose-300 backdrop-blur-lg rounded-2xl px-4
     lg:px-8 py-2 shadow-lg font-sans'>
         <div className='flex items-center justify-between w-full
-        space-x-6 lg:space-x-6'>
+        gap-6'>
             {/* Logo */}
         <a href="/" className='flex items-center space-x-2'>
         <span className='text-2xl font-mono font-extrabold text-pink-600'>
@@ -57,13 +57,7 @@ const Navbar = () => {
                 </a>
             ))}
         </div>
-        <div className='flex items-center space-x-2'>
-            <a href="#contact"
-            className='hidden lg:block px-6 py-2 font-semibold font-mono tracking-wide
-            rounded-full bg-linear-to-r from-pink-400 to-pink-600
-            text-pink-50 shadow-md hover:shadow-lg transition-shadow'>
-                Hire Me
-            </a>
+        <div className='flex lg:hidden items-center space-x-2'>
         <div>
 
             <div className='flex lg:hidden items-center space-x-4 px-2'></div>
@@ -111,13 +105,6 @@ const Navbar = () => {
 
                         </a>
                 ))}
-                <a href="#contact"
-                onClick={() => setIsMenuOpen(false)}
-                className='block py-3 px-4 text-center font-semibold
-                rounded-lg bg-linear-to-r from-pink-600 to-rose-700
-                text-white shadow-md'>
-                    Hire Me
-                </a>
                 </div>
 
             </div>

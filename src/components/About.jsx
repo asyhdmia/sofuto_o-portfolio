@@ -9,13 +9,14 @@ const About = () => {
     justify-center p-4 sm:p-6 lg:p-12 relative overflow-hidden
     select-none'>
         <div className='container mx-auto flex flex-col lg:flex-row
-        items-center justify-between gap-12 lg:gap-6 relative z-10'>
+        items-center justify-between gap-4 lg:gap-6 relative z-10'>
 
         <div 
         data-aos='fade-right'
         data-aos-duration='800'
         className='w-full lg:w-[30%] flex flex-col items-center
-        lg:items-start text-center lg:text-left order-2 lg:order-1'>
+        lg:items-start text-center lg:text-left order-2 lg:order-1
+        -mt-12 sm:-mt-16 lg:mt-0'>
             <p className='text-sm lg:text-lg mb-2 font-bold
             text-pink-200 font-mono tracking-widget uppercase'>
                 Get to Know Me
