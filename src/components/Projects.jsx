@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import iconflower from '../assets/iconflower.png'
 import { ExternalLink, X, ArrowLeft, Info, Laptop, PlayCircle } from 'lucide-react'
-import { FaGithub } from 'react-icons/fa'
 // Add your own files here, then use them in the `media` lists below:
-// import arvolcano1 from '../assets/arvolcano1.png'
-// import arvolcano2 from '../assets/arvolcano2.png'
-// import arvolcanoVideo from '../assets/arvolcano.mp4'
+// import storytelling1 from '../assets/storytelling1.png'
+// import storytellingVideo from '../assets/storytelling.mp4'
 
 const Projects = () => {
     const [selected, setSelected] = useState(null)
@@ -19,207 +17,115 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: 'Research Ideation Canvas - GERIC',
+            title: 'Multisensory Digital Storytelling Platform',
             year: '20XX',
-            tags: ['Web App', 'Internship', 'Collaboration'],
-            tech: ['HTML', 'CSS', 'JavaScript'],
+            tags: ['Unity', 'Interactive Narrative', 'Final Year Project'],
+            tech: ['Unity', 'C#', 'PlayerPrefs'],
             features: [
-                'Organizes research ideas using structured frameworks',
-                'Collaborative ideation tools',
-                'Visual canvas for mapping ideas'
-            ],
-            desc: 'An interactive web-based system collaboratively developed during my internship to organize and visualize research ideas using structured frameworks and collaborative ideation tools.'
-        },
-        {
-            id: 2,
-            title: 'GIMS - GERIC Integrated Management System',
-            year: '20XX',
-            tags: ['Web App', 'Internship', 'Management System'],
-            tech: ['HTML', 'CSS', 'JavaScript'],
-            features: [
-                'Centralized data management',
-                'Reporting for internal operations',
-                'Administrative workflows in one platform'
-            ],
-            desc: 'A web-based management system developed during my internship to support GERIC’s internal operations by centralizing data management, reporting, and administrative workflows into a single integrated platform.'
-        },
-        {
-            id: 3,
-            title: 'AR Volcano',
-            year: '20XX',
-            tags: ['AR', 'Education', 'Final Year Project'],
-            tech: ['Augmented Reality', '3D Modelling'],
-            features: [
-                '3D volcano model projected into the user’s environment',
-                'Rotate, zoom and explore volcanic layers',
-                'Eruption animations and interactive information panels'
+                'Branching decision-making scenarios',
+                'Local data persistence to track user progress and history logs',
+                'Additive scene management for a seamless interactive experience'
             ],
             // Example media (uncomment the imports at the top first):
-            // image: arvolcano1,
+            // image: storytelling1,
             // media: [
-            //     { type: 'image', src: arvolcano1, caption: 'Volcano model in AR' },
-            //     { type: 'image', src: arvolcano2, caption: 'Interactive information panel' },
-            //     { type: 'video', src: arvolcanoVideo, caption: 'App walkthrough' },
+            //     { type: 'image', src: storytelling1, caption: 'Branching scenario screen' },
+            //     { type: 'video', src: storytellingVideo, caption: 'App walkthrough' },
             //     { type: 'youtube', src: 'https://www.youtube.com/embed/VIDEO_ID', caption: 'Demo video' },
             //     { type: 'demo', src: 'https://your-demo-link.com', caption: 'Try the live demo' },
             // ],
-            desc: 'ARVolcano App was developed for my Final Year Project (FYP) with the goal of enhancing the learning experience in earth science education. The application uses augmented reality to project a 3D volcano model into the user’s environment, allowing them to rotate, zoom, and explore different volcanic layers. It also includes animations that simulate eruptions and interactive information panels to help users understand how volcanoes work.'
+            desc: 'An interactive narrative platform developed in Unity and C# to enhance emotional literacy through branching decision-making scenarios. It uses PlayerPrefs for local data persistence to track user progress and history logs, and additive scene management to support a seamless interactive experience.'
+        },
+        {
+            id: 2,
+            title: 'Online Blood Bank System (OBBS)',
+            year: '20XX',
+            tags: ['Web App', 'Healthcare', 'Database'],
+            tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+            features: [
+                'Blood donor registration',
+                'Blood distribution support',
+                'Database-driven blood donation management'
+            ],
+            desc: 'A web-based system developed to support blood donor registration and blood distribution. It implements database-driven functionality to support blood donation management.'
+        },
+        {
+            id: 3,
+            title: 'FKA Lab Inventory System (FKALIS)',
+            year: '20XX',
+            tags: ['Web App', 'Inventory', 'Role-Based Login'],
+            tech: ['MySQL', 'JavaScript', 'HTML', 'CSS'],
+            features: [
+                'Inventory system for the Faculty of Civil Engineering, UiTM Pahang',
+                'Role-based login for developers, system administrators, moderators and laboratory assistants',
+                'Manage and display database records'
+            ],
+            desc: 'A web-based inventory system developed for the Faculty of Civil Engineering at UiTM Pahang. It implements role-based login for developers, system administrators, moderators, and laboratory assistants to manage and display database records.'
         },
         {
             id: 4,
-            title: 'Jungle Paws Web Based System',
+            title: 'Rescue at Dawn',
             year: '20XX',
-            tags: ['Web App', 'Booking System'],
-            tech: ['PHP', 'MySQL', 'HTML', 'CSS'],
+            tags: ['Game', '2D', 'Unity'],
+            tech: ['Unity', 'C#'],
             features: [
-                'User account creation and profile update',
-                'Browse available cat-care packages',
-                'Automatically generated printable receipt'
+                '2D side-view platform adventure',
+                'Magical medieval world setting',
+                'Built with Unity'
             ],
-            desc: 'Jungle Paws is a web-based booking system, designed specifically for managing reservations at a cat hotel. The system allows users to create an account, update their profile, and browse available cat-care packages before making a booking. Once a reservation is completed, the system automatically generates a printable receipt for record-keeping.'
+            desc: 'A 2D side-view platform adventure game set in a magical medieval world, developed using Unity.'
         },
         {
             id: 5,
-            title: 'Sign Language Detection App',
+            title: 'Ngosek Dash',
             year: '20XX',
-            tags: ['AI', 'Machine Learning', 'Course Project'],
-            tech: ['Machine Learning', 'AI Algorithms'],
+            tags: ['Game', '2D', 'Halloween'],
+            tech: ['Construct 2'],
             features: [
-                'Detects sign language gestures',
-                'Interprets gestures into meaning',
-                'Built with machine learning techniques'
+                'Halloween-themed 2D side-scrolling gameplay',
+                'Obstacle avoidance',
+                'Candy collection'
             ],
-            desc: 'This application was developed as part of a course assignment to demonstrate the implementation of Artificial Intelligence (AI) algorithms through machine learning techniques for sign language gesture detection and interpretation.'
+            desc: 'A Halloween-themed 2D side-scrolling game featuring obstacle avoidance and candy collection, created using Construct 2.'
         },
         {
             id: 6,
-            title: 'Math Bingo Game App',
+            title: 'Math Bingo',
             year: '20XX',
             tags: ['Game', 'Education'],
             tech: ['HTML', 'PHP'],
             features: [
                 'Interactive bingo-style gameplay',
-                'Reinforces basic arithmetic skills',
-                'Fun and user-friendly experience'
+                'Supports learning of basic mathematical operations',
+                'Educational and user-friendly experience'
             ],
-            desc: 'An educational game application designed to make learning basic mathematics more engaging through interactive bingo-style gameplay. The app reinforces arithmetic skills while providing a fun and user-friendly experience.'
+            desc: 'An educational game developed using HTML and PHP to support learning basic mathematical operations through interactive bingo-style gameplay.'
         },
         {
             id: 7,
-            title: 'Blood Bank Hospital System',
-            year: '20XX',
-            tags: ['Web App', 'Healthcare', 'Database'],
-            tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
+            title: 'Attendance and Project Management Records System (e-APMRs)',
+            year: '2023',
+            tags: ['Web App', 'Internship', 'Records System'],
+            tech: ['JavaScript', 'HTML'],
             features: [
-                'Tracks donor information',
-                'Monitors blood stock levels',
-                'Basic administrative workflows'
+                'Records staff attendance',
+                'Tracks project progress',
+                'Built during Software Development Internship at East Automation & Engineering Sdn Bhd'
             ],
-            desc: 'A web-based system designed to manage blood donation and inventory records for hospital use. The system supports efficient tracking of donor information, blood stock levels, and basic administrative workflows to improve data organization and accessibility.'
+            desc: 'A system developed during my Software Development Internship at East Automation & Engineering Sdn Bhd (March – October 2023). Built using JavaScript and HTML, it records staff attendance and tracks project progress.'
         },
         {
             id: 8,
-            title: 'Froggy Forest - Game',
-            year: '20XX',
-            tags: ['Game', '2D'],
-            tech: ['Game Development'],
+            title: 'Data Quality Assessment Script',
+            year: '2026',
+            tags: ['Python', 'Internship', 'Data Governance'],
+            tech: ['Python', 'Visual Studio Code'],
             features: [
-                'Forest-themed 2D environment',
-                'Control a frog through obstacles and challenges',
-                'Simple mechanics and enjoyable interaction'
+                'Assesses, scores and cleans structured and unstructured datasets',
+                'Validates data integrity, accuracy, completeness and consistency',
+                'Supports data governance and privacy initiatives'
             ],
-            desc: 'A 2D casual game set in a forest environment, designed to provide a light and engaging gameplay experience. Players control a frog character to navigate obstacles and challenges, focusing on simple mechanics and enjoyable interaction.'
-        },
-        {
-            id: 9,
-            title: 'RoomCraft - Web Based',
-            year: '20XX',
-            tags: ['Web App', 'Design'],
-            tech: ['HTML', 'CSS', 'JavaScript'],
-            features: [
-                'Interactive room layout design',
-                'Space planning and interior arrangement',
-                'Intuitive and user-friendly interface'
-            ],
-            desc: 'A web-based application that allows users to design and visualize room layouts interactively. The system helps users experiment with space planning and interior arrangements through an intuitive and user-friendly interface.'
-        },
-        {
-            id: 10,
-            title: 'Soil Monitoring System - ARDUINO',
-            year: '20XX',
-            tags: ['IoT', 'Hardware'],
-            tech: ['Arduino', 'Soil Moisture Sensor'],
-            features: [
-                'Monitors soil moisture levels',
-                'Collects sensor data in real time',
-                'Supports plant care and agriculture decisions'
-            ],
-            desc: 'An IoT-based system developed using Arduino to monitor soil conditions such as moisture levels. The system collects sensor data in real time to support basic analysis and decision-making for plant care and agriculture use.'
-        },
-        {
-            id: 11,
-            title: 'Data Mining',
-            year: '20XX',
-            tags: ['Data', 'Course Project'],
-            tech: ['WEKA'],
-            features: [
-                'Dataset preprocessing',
-                'Pattern and insight extraction',
-                'Interpretation of results for decision-making'
-            ],
-            desc: 'A course assignment that applied data mining techniques using WEKA to analyze datasets and extract meaningful patterns and insights. The project demonstrates the process of preprocessing, analyzing, and interpreting data for decision-making purposes.'
-        },
-        {
-            id: 12,
-            title: 'Scratch - Game',
-            year: '20XX',
-            tags: ['Game', 'Course Project'],
-            tech: ['Scratch'],
-            features: [
-                'Programming logic and event handling',
-                'Basic game design concepts',
-                'Learning through play and creative problem-solving'
-            ],
-            desc: 'A simple interactive game developed using Scratch to demonstrate programming logic, event handling, and basic game design concepts. The project emphasizes learning through play and creative problem-solving.'
-        },
-        {
-            id: 13,
-            title: 'Audio Compression',
-            year: '20XX',
-            tags: ['Multimedia', 'Audio'],
-            tech: ['Digital Signal Processing'],
-            features: [
-                'Reduces audio file size',
-                'Maintains sound quality',
-                'Analyzes and compresses audio data efficiently'
-            ],
-            desc: 'A project focused on reducing audio file sizes while maintaining sound quality. Techniques in digital signal processing were applied to analyze and compress audio data efficiently, demonstrating understanding of multimedia and data optimization concepts.'
-        },
-        {
-            id: 14,
-            title: 'Eon-XR - Meta Experience',
-            year: '20XX',
-            tags: ['XR', 'VR', 'Course Project'],
-            tech: ['EON-XR'],
-            features: [
-                '3D and 360° content design',
-                'Works across mobile and VR devices',
-                'Immersive user experience'
-            ],
-            desc: 'An interactive XR experience created using the EON-XR application as part of a course assignment. The project allowed me to design engaging 3D and 360° content and explore immersive user experiences across mobile and VR devices.'
-        },
-        {
-            id: 15,
-            title: 'Blender Project',
-            year: '20XX',
-            tags: ['3D', 'Design'],
-            tech: ['Blender'],
-            features: [
-                '3D object modeling',
-                'Texturing',
-                'Visualization and spatial design'
-            ],
-            desc: '3D objects modeled and designed using Blender to demonstrate proficiency in 3D modeling, texturing, and visualization. The project showcases creativity and understanding of spatial design principles.'
+            desc: 'A Python script developed during my Data Governance and Privacy Internship at Sunway Services Sdn Bhd (March – July 2026) to assess, score, and clean structured and unstructured datasets based on data quality dimensions. It validates data integrity, accuracy, completeness, and consistency, applying data quality assessment techniques to support data governance and privacy initiatives.'
         },
     ]
 
@@ -336,13 +242,13 @@ const Projects = () => {
                                         <Laptop className='w-16 h-16 text-pink-300'/>
                                     </div>
                                 )}
-                                <h3 className='text-2xl font-bold text-white mb-2'>
+                                <h3 className='text-2xl font-bold text-white mb-5'>
                                     {selected.title}
                                 </h3>
-                                <p className='text-pink-400 mb-4 line-clamp-3'>
+                                <p className='text-pink-400 mb-6 line-clamp-3'>
                                     {selected.desc}
                                 </p>
-                                <div className='flex flex-wrap gap-2 mb-4'>
+                                <div className='flex flex-wrap gap-2 mb-8'>
                                     {selected.tags.map((t, i) => (
                                         <span
                                         key={i}
@@ -353,13 +259,6 @@ const Projects = () => {
                                     ))}
                                 </div>
                                 <div className='flex gap-3'>
-                                    <button className='flex-1 py-2 bg-pink-500
-                                    rounded-lg text-white font-semibold
-                                    hover:bg-pink-600 transition flex items-center
-                                    justify-center gap-2'>
-                                        <FaGithub className='w-4 h-4'/>
-                                        Code
-                                    </button>
                                     <button
                                     onClick={() => setShowDetails(true)}
                                     className='flex-1 py-2 bg-rose-500
