@@ -57,7 +57,7 @@ const Skills = () => {
                     </h2>
                     <img src={iconflower} alt="flower" className='w-10 h-10'/>
                 </div>
-                <p className='text-gray-300'>Tools and charms I use regularly</p>
+                <p className='text-gray-300'>Tools I use regularly</p>
             </div>
 
             {/* Filter tabs */}
